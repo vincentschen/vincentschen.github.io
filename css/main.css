@@ -9,17 +9,21 @@ body {
 
 .categories {
     margin: 0 auto;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     float: right;
     text-align: right;
+    padding: 0em;
 }
 
 h1 {
     font-size: 4.5em;    
     font-weight: 200;
     color: #A9A9A9;
-    padding: 0em;
     margin: 0em;
-    margin-right: 1em;
 }
 
 h1:hover {
