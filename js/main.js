@@ -1,20 +1,10 @@
 $(document).ready(function(){
 	$('#projects').click(function(){
-		$('.projects').show("slow");
+		$('.overlay').addClass('open');
 	})
 
-	$('#myName').click(function(){
-		$('.projects').hide("slow");
+	$('.overlay').click(function(){
+		$(this).removeClass('open');
 	})
-
-	$( "#email" ).hover(function() {
-    	$( this ).append( $( "<h1> ***</h1>" ) );
-  	}, function() {
-    	$( this ).find( "h1:last" ).remove();
-  }
-);
-
-});
-
 
 });
