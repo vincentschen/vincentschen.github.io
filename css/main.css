@@ -20,6 +20,7 @@ body {
     padding: 0em;
     margin-right: 2em;
     margin-bottom: 2em;
+    z-index: 1;
 }
 
 h1 {
@@ -174,4 +175,31 @@ h3 {
     color: #ffffff;
     position: relative;
     z-index: 2000;
+}
+
+#projectsContainer{
+    position: absolute;
+    z-index: 2;
+    float: left;
+    margin: 2em;
+    display: none;
+    color: #ffffff;
+}
+
+#experienceContainer{
+    position: absolute;
+    z-index: 2;
+    float: left;
+    margin: 2em;
+    display: none;
+    color: #ffffff;
+}
+
+#courseworkContainer{
+    position: absolute;
+    z-index: 2;
+    float: left;
+    margin: 2em;
+    display: none;
+    color: #ffffff;
 }
