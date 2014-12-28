@@ -1,26 +1,27 @@
 $(document).ready(function(){
+	var fadeSpeed = 500; 
 	$('#projects, #experience, #coursework').click(function(){
 		$(this).addClass('categoryActive');
-		$('.overlay').addClass('open');
+		// $('.overlay').addClass('open');
+		$('.overlay').fadeIn(fadeSpeed);
 	})
 
 	$('#projects').click(function(){
-		$('#projectsContainer').show();
+		$('#projectsContainer').fadeIn(fadeSpeed);
 	})
 
 	$('#experience').click(function(){
-		$('#experienceContainer').show();
+		$('#experienceContainer').fadeIn(fadeSpeed);
 	})
 
 	$('#coursework').click(function(){
-		$('#courseworkContainer').show();
+		$('#courseworkContainer').fadeIn(fadeSpeed);
 	})
 
-
 	$('.overlay').click(function(){
-		$(this).removeClass('open');
+		$('.overlay').fadeOut(fadeSpeed);
 		$('#projects, #experience, #coursework').removeClass('categoryActive');
-		$('#projectsContainer, #experienceContainer, #courseworkContainer').hide();
+		$('#projectsContainer, #experienceContainer, #courseworkContainer').fadeOut(fadeSpeed);
 	})
 
 });
