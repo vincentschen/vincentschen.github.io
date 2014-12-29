@@ -18,10 +18,17 @@ $(document).ready(function(){
 		$('#courseworkContainer').fadeIn(fadeSpeed);
 	})
 
+	//close overlay
 	$('.overlay').click(function(){
 		$('.overlay').hide();
 		$('#projects, #experience, #coursework').removeClass('categoryActive');
 		$('#projectsContainer, #experienceContainer, #courseworkContainer').hide();
 	})
+	$('#projectsContainer').click(function(){
+		$('.overlay').hide();
+		$('#projects, #experience, #coursework').removeClass('categoryActive');
+		$('#projectsContainer, #experienceContainer, #courseworkContainer').hide();
+	})
+
 
 });
