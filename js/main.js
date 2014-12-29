@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var fadeSpeed = 500; 
+	var fadeSpeed = 600; 
 	$('#projects, #experience, #coursework').click(function(){
 		$(this).addClass('categoryActive');
 		// $('.overlay').addClass('open');
@@ -19,9 +19,9 @@ $(document).ready(function(){
 	})
 
 	$('.overlay').click(function(){
-		$('.overlay').fadeOut(fadeSpeed);
+		$('.overlay').hide();
 		$('#projects, #experience, #coursework').removeClass('categoryActive');
-		$('#projectsContainer, #experienceContainer, #courseworkContainer').fadeOut(fadeSpeed);
+		$('#projectsContainer, #experienceContainer, #courseworkContainer').hide();
 	})
 
 });
