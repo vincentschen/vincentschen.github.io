@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$('#projects, #experience, #coursework').removeClass('categoryActive');
 		$('#projectsContainer, #experienceContainer, #courseworkContainer').hide();
 	})
-	$('#projectsContainer, #experienceContainer, #courseworkContainer, ul.events').click(function(){
+	$('#projectsContainer, #courseworkContainer').click(function(){
 		$('.overlay').hide();
 		$('#projects, #experience, #coursework').removeClass('categoryActive');
 		$('#projectsContainer, #experienceContainer, #courseworkContainer').hide();

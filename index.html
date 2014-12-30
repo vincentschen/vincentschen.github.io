@@ -91,20 +91,60 @@
         </div>
         
         <div id="experienceContainer">
-            <ul class="events">
-                <li style="width: 50%; left: 50%"> Stanford Student Enterprises* </br><em> product development intern </em></li>
-                <li style="width: 33%; left: 20%;"> Columbia University, BME </br><em> electrical engineering intern </em></li>
-                <li style="width: 25%; left: 10%;">Stevens Institute of Technology </br><em> research engineering intern </em></li>
-
-            </ul> <!-- end .events -->
-
-            <ul class="intervals">
-                <li class="first">2013</li>
-                <li>2014</li>
-                <li>2015</li>
-            </ul> <!-- end .intervals -->
-
-            <span style="font-family:'Lato'; float: right"><h4> * current position</h4></span> 
+            <ul id='timeline'>
+              <li class='work'>
+                <input class='radio' id='work4' name='works' type='radio'>
+                <div class="relative">
+                  <label for='work4'>Stanford Student Enterprises<span class="position">Product Development</span></label>
+                  <span class='date'>September 2014</span>
+                  <span class='circle'></span>
+                </div>
+                <div class='content'>
+                  <p>
+                    Designed mobile application to distribute coupons and deals for San Francisco Bay Area businesses. Utilized wireframe tools and iterative design methodology to gear user flow towards local college students. Facilitated the transition from print to mobile advertisement technologies.
+                  </p>
+                </div>
+              </li>
+              <li class='work'>
+                <input class='radio' id='work3' name='works' type='radio'>
+                <div class="relative">
+                  <label for='work3'>Columbia University<span class="position">Electrical Engineering</span></label>
+                  <span class='date'>January 2014</span>
+                  <span class='circle'></span>
+                </div>
+                <div class='content'>
+                  <p>
+                    Engineered thermal cooling system for LED phototherapy unit through testing and internal redesign. Reduced device’s operational temperature by 35% to achieve the safe threshold for neonatal skin. Collaborated with health professionals to target global health initiative in Mulago Hospital, Uganda.
+                  </p>
+                </div>
+              </li>
+              <li class='work'>
+                <input class='radio' id='work2' name='works' type='radio'>
+                <div class="relative">
+                  <label for='work2'>Stevens Institute of Technology<span class="position">Research Engineering</span></label>
+                  <span class='date'>June 2013</span>
+                  <span class='circle'></span>
+                </div>
+                <div class='content'>
+                    <p>
+                    Designed and fabricated PZT nanogenerator for energy harvest from ambient airflow. Device featured PZT nanofibers aligned laterally across interdigitated gold electrodes for maximum transfer of power output. Utilized SolidWorks modeling software and simulation to iterate through testing and development phases. <i> Published for American Society of Mechanical Engineers 2014 IDETC/CIEC. Recognized as Top 10 Finalist of 2014 Monmouth Junior Science Symposium. </i>
+                    </p>
+                </div>
+              </li>
+              <li class='work'>
+                <input class='radio' id='work1' name='works' type='radio'>
+                <div class="relative">
+                  <label for='work1'>Rutgers University<span class="position">Research</span></label>
+                  <span class='date'>June 2012</span>
+                  <span class='circle'></span>
+                </div>
+                <div class='content'>
+                  <p>
+                    Developed murine model to determine relationship between PhIP, a dietary carcinogen commonly found in grilled or broiled meats, and DSS in the development of colorectal cancer. CYP-1A mice were utilized to reflect the enzyme responsible for activation and metabolization of PhIP in humans. Utilized resources of Ernest Mario Center for Cancer Prevention for various lab procedures.
+                  </p>
+                </div>
+              </li>
+            </ul>
         </div>
 
         <div id="courseworkContainer">
@@ -130,7 +170,7 @@
                     <li> Computer Integrated Manufacturing </li>
                 </ul>
         </div>
-        
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>        
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
