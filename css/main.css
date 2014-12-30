@@ -398,7 +398,7 @@ h3 {
 }
 
 .content p{
-    padding-top: 1em;
+    padding-top: 0.5em;
     font-family: 'Merriweather', serif;
     max-height: 0;
     color: transparent;
@@ -415,6 +415,10 @@ h3 {
     z-index: 100;
     cursor: pointer;
     top: 20px;
+    -webkit-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    -ms-transition: transform 0.2s linear;
     transition: transform 0.2s linear;
 }
 
@@ -424,9 +428,12 @@ h3 {
 
 .radio:checked + .relative label{
     cursor: auto;
+    -webkit-transform: translateX(42px);
+    -moz-transform: translateX(42px);
+    -o-transform: translateX(42px);
+    -ms-transform: translateX(42px);
     transform: translateX(42px);
 }
-
 
 .radio:checked + .relative .circle {
     background: #A9A9A9;
@@ -436,7 +443,15 @@ h3 {
     max-height: 180px;
     border-color: #E5E5E5;
     margin-right: 20px;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    -ms-transform: translateX(20px);
     transform: translateX(20px);
+    -webkit-transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+    -moz-transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+    -o-transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+    -ms-transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
     transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
@@ -444,6 +459,10 @@ h3 {
     max-height: 200px;
     color: #ffffff;
     transition: color 0.3s linear 0.3s;
+    -webkit-transition: color 0.3s linear 0.3s;
+    -moz-transition: color 0.3s linear 0.3s;
+    -o-transition: color 0.3s linear 0.3s;
+    -ms-transition: color 0.3s linear 0.3s;
 }
 
 
