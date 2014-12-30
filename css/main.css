@@ -4,6 +4,9 @@ a, a:hover, a:visited{
     color: inherit;
 }
 
+#myName{
+    cursor: default;
+}
 /* background image */
 
 body {
@@ -51,6 +54,7 @@ h1:hover {
     margin: 2em;
     margin-top: 1em;
     float: left;
+    cursor: default;
 }
 
 h2 {
