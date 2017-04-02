@@ -1,191 +1,108 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Vincent Chen</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html> 
+<html>
+<head> 
+  <title>vincentsc.com</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link href="main.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <link rel="shortcut icon" href="http://vincentschen.github.io/favicon.ico?v=2" />
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>   
-        <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic|Merriweather:300' rel='stylesheet' type='text/css'>        
-        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script> 
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="contact"> 
-            <ul class="contactIcons">
-                <li id="email">
-                    <a class ="fa fa-envelope spaced" href="mailto:vschen@stanford.edu"></a>
-                    <span id="emailLabel"> vschen@stanford.edu </span>
-                </li>
-                <li id="phone">
-                    <a class ="fa fa-phone spaced" href="tel:+17325816317"></a>
-                    <span id="phoneLabel"> (732) 581-6317 </span>
-                </li>
-                <li><a class ="fa fa-linkedin spaced" href="https://www.linkedin.com/in/vincentchen4/"></a></li>
-                <li id="twitter">
-                    <a class="fa fa-twitter spaced" href="https://twitter.com/vinceschen"></a>
-                    <span id="twitterLabel"> @vinceschen </span>
-                </li>
-                <li><a class="fa fa-facebook spaced" href="https://www.facebook.com/vince.s.chen"></a></li>
-                <li><a class ="fa fa-github spaced" href="https://github.com/vincentschen"></a></li>         
-            </ul>
-        </div>
-
-        <div class="info">
-            <h2 id="myName"> vincent chen </h2>
-            <h3> stanford university '18 </h3> 
-        </div>
-        <div class="categories"> 
-            <div class="overlay"></div>
-            <h1 id="projects"> projects </h1> </br>
-            <h1 id="experience">  experience  </h1> </br>
-            <h1 id="coursework">  coursework </h1> </br>
-        </div>
-        <div id="projectsContainer"> 
-            <h4> enCal </h4> 
-            <span class="tools"> node.js </span>
-            <a class ="fa fa-external-link fa-2x spaced externalLink" href="http://challengepost.com/software/encal"></a>
-            <a class ="fa fa-github fa-2x spaced externalLink" href="https://github.com/CalYaks/enCal"></a>
-            <p> As students, we find ourselves bombarded with emails about events happening on campus. There are so many club mailing list threads, interview requests, and free food announcements in our inboxes that it's impossible to keep track of all upcoming events efficiently. We wanted to make it quick and easy to prioritize your events while maintaining a clean workspace. </p>
-            <p> We use natural language processing to automatically extract your event's date, time, and location, and send it - in real-time - to your event management dashboard. You'll get a notification directly in your browser so you can manage your events efficiently while you're surfing the web. </p> 
-            <p> Our integration with SendGrid's Parse Webhook makes it even easier to quickly add events to your calendar without having to fumble around with calendar apps and forms. </p>
-            </p><div class="scroll-indicator"></div>
-
-            <h4> HTHS Secret Santa </h4> 
-            <span class="tools"> php, mySQL </span>
-            <a class ="fa fa-external-link fa-2x spaced externalLink" href="http://hths-secret-santa.tk/"></a>
-            <a class ="fa fa-github fa-2x spaced externalLink" href="https://github.com/mahsu/HTHS-Secret-Santa"></a>
-            <p> In operation since 2012, HTHS Secret Santa is a web app built by and for HTHS students. Our goal is to foster community and giving in the High Tech community by organizing an intuitive Secret Santa through a web application. We'd love for you to participate in this year's festivities! </p>
-            </p><div class="scroll-indicator"></div>
-
-            <h4> Portfolio Benchmarking Tool </h4> 
-            <span class="tools"> python </span>
-            <a class ="fa fa-github fa-2x spaced externalLink" href="https://github.com/blythfund"></a> 
-            <p>This module will allow the user to define a benchmark to compare their portfolio to. The user is also be able to retrive the cumulative and daily/mtd/qtd/ytd/si returns for this benchmark over any time period. </p>
-            </p><div class="scroll-indicator"></div> 
-
-            <h4> Fashion Blueprint </h4> 
-            <span class="tools"> php </span>            
-            <a class ="fa fa-external-link fa-2x spaced externalLink" href="http://fashionblueprint.herokuapp.com"></a>
-            <a class ="fa fa-github fa-2x spaced externalLink" href="https://github.com/HTHSBlueprint/FashionBlueprint"></a> 
-            <p> Utilizes Weather Underground API to generate custom-designed "outfit of the day". </p>
-            <p><i>Winner of "Most Humorous Application", MIT Blueprint 2014 </i></p>
-            </p><div class="scroll-indicator"></div> 
-
-            <h4> Chainge </h4> 
-            <span class="tools"> php, mySQL </span>            
-            <a class ="fa fa-external-link fa-2x spaced externalLink" href="http://www.chainging.us"></a>
-            <p> Chainge is a task management app that helps users keep themselves motivated. Inspired by Jerry Seinfield's "Don't Break the Chain" habit-tracking strategy, Chainge offers a beautiful visual display of the chains of good habits that you've kept up. </p>
+<body> 
+  <div class="container">
+    <div class="content">
+        <h1> vincent 
+          <a href="mailto:vincentsc@cs.stanford.edu">email</a>
+          <a href="http://twitter.com/vinceschen">twitter</a> 
+          <a href="https://www.linkedin.com/in/vincent4chen">linkedin</a>
+          <a href="http://flickr.com/photos/vincentschen">flickr</a>
+          <a href="https://www.goodreads.com/user/show/45853018-vincent-chen">goodreads</a>
+        </h1> 
+        
+        <p>CS @ Stanford with a concentration in AI. Creative writing minor.
+        </br>Work/Learning in Progress: Computer Vision for VR/AR.</p>
+        
+        <h2>where I've learned</h2> 
+        <div class="item">
+          <ul>
+            <li> 
+              Incoming Software Engineering Intern <span><a class="link" href="https://siftscience.com">Sift Science</a></span>
+              <p class="description"> Summer 2017. Modeling/Machine Learning. </p> 
+            </li>
+            
+            <li> 
+              Founder/Lead <span><a class="link" href="http://www.rabbitholevr.org/projects.html">Rabbit Hole Labs</a></span>
+              <p class="description"> 2017. Rapid interface-prototyping in VR. </p> 
+            </li>
+            
+            <li>
+              Co-Director <span><a class="link" href="https://www.treehacks.com/">TreeHacks</a></span></h3>
+              <p class="description"> 2016. Creating a special weekend for 800 makers from around the world.</p> 
+            </li>
+            
+            <li>
+              Product Intern <span><a class="link" href="http://www.xbox.com/en-US/project-scorpio">Xbox, Microsoft</a></span>
+              <p class="description"> Summer 2016. Building console VR experiences. </p> 
+            </li>
+            
+            <li>
+              Product/Engineering Intern <span><a class="link" href="https://emguidance.com">EMGuidance</a></span>
+              <p class="description"> Spring 2016. </p> 
+            </li>
+          </ul>
         </div>
         
-        <div id="experienceContainer">
-            <ul id='timeline'>
-              <li class='work'>
-                <input class='radio' id='work4' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work4'>Stanford Student Enterprises<span class="position">Product Development</span></label>
-                  <span class='date'>September 2014</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Designed mobile application to distribute coupons and deals for San Francisco Bay Area businesses. Utilized wireframe tools and iterative design methodology to gear user flow towards local college students. Facilitated the transition from print to mobile advertisement technologies.
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work3' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work3'>Columbia University<span class="position">Electrical Engineering</span></label>
-                  <span class='date'>January 2014</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Engineered thermal cooling system for LED phototherapy unit through testing and internal redesign. Reduced device’s operational temperature by 35% to achieve the safe threshold for neonatal skin. Collaborated with health professionals to target global health initiative in Mulago Hospital, Uganda.
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work2' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work2'>Stevens Institute of Technology<span class="position">Research Engineering</span></label>
-                  <span class='date'>June 2013</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                    <p>
-                    Designed and fabricated PZT nanogenerator for energy harvest from ambient airflow. Device featured PZT nanofibers aligned laterally across interdigitated gold electrodes for maximum transfer of power output. Utilized SolidWorks modeling software and simulation to iterate through testing and development phases. <i> Published for American Society of Mechanical Engineers 2014 IDETC/CIEC. Recognized as Top 10 Finalist of 2014 Monmouth Junior Science Symposium. </i>
-                    </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work1' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work1'>Rutgers University<span class="position">Research</span></label>
-                  <span class='date'>June 2012</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Developed murine model to determine relationship between PhIP, a dietary carcinogen commonly found in grilled or broiled meats, and DSS in the development of colorectal cancer. CYP-1A mice were utilized to reflect the enzyme responsible for activation and metabolization of PhIP in humans. Utilized resources of Ernest Mario Center for Cancer Prevention for various lab procedures.
-                  </p>
-                </div>
-              </li>
-            </ul>
+        <h2>what I've built</h2> 
+        
+        <div class="item">
+          <h3>An Examination of the CNN/DailyMail Neural Summarization Task <span>CS224N: NLP with Deep Learning</span> 
+            <a class="fa fa-paper-plane" href="cs224n.pdf"></a>
+          </h3>
+          <p class="description"> Tensorflow. </p> 
+          <p>A look into several approaches in order to improve an already existing sequence-to-sequence model. We are particularly interested in the CNN/DailyMail dataset, whose manually-written highlights we believe to be more promising than traditional headline-based summarization tasks.
+          </br>Collaboration: Liezl Puzon, Eduardo Torres Montaño. Advisor: Danqi Chen.</p>
+        </div>
+        
+        <div class="item">
+          <h3>AI Agent for Snake feat. Mice <span>CS221: Artificial Intelligence</span> 
+            <a class="fa fa-paper-plane" href="cs221.pdf"></a>
+          </h3>
+          <p class="description"> Game-playing agents, Python. </p> 
+          <p>Game-playing agent for Snake with moving food items, or mice. 
+          </br>Collaboration: John Kamalu, Scott Kazmierowicz.</p>
+        </div>
+        
+        <div class="item">
+          <h3>Ray-traced Image <span>CS148: Graphics</span> 
+            <a class="fa fa-paper-plane" href="cs148.pdf"></a>
+          </h3>
+          <p class="description"> C++, OpenGL, Maya. </p> 
+          <p>Ray-traced scene with implementing Epic Games shaders, bounding volume hierarchy (BVH) acceleration structures, point/directional/area lights, and multi-threading features. Modeled and textured several key scene objects by hand using Autodesk Maya and Photoshop.
+          </br>Collaboration: Owen Wang.</p>
+        </div>
+        
+        <div class="item">
+          <h3>Curriculum Network <span>Research <a class="link" href="http://hci.stanford.edu/">(Stanford HCI)</a></span> 
+            <a class="fa fa-github" href="https://github.com/vincentschen/curriculum-network"></a>
+          </h3>
+          <p class="description"> d3.js, Node.js. </p> 
+    			<p>Visual curriculum for on-demand, personalized education. in conjunction with Stanford’s Human Computer Interaction Lab.
+          </br> Collaboration: Geza Kovacs. Advisor: Michael Bernstein.</p>
+        </div>
+        
+        <div class="item">
+          <h3>Constellation <span>Hackathon</span> 
+            <a class="fa fa-github" href="https://github.com/constellationVR"></a>
+            <a class="fa fa-youtube" href="https://youtu.be/ABxhgX6WRnM"></a>
+          </h3>
+          <p class="description"> Unity3D, Python/Flask. </p> 
+    			<p> 3D mind-mapping in virtual reality. Take notes with natural language and organize them in 3D space using your hands. 
+          </br>Collaboration: Zachary Liu, Liezl Puzon, Andy Sturzu.</p>
         </div>
 
-        <div id="courseworkContainer">
-            <h4>Winter 2015</h4>
-                <ul>
-                    <li> Computer Organizations &amp Systems <span class="course">CS 107</span></li>
-                    <li> Entrepreneurial Communication <span class="course"> GSBEN 111Q </span></li>
-                </ul>
+    </div> 
+  </div>
+</body> 
 
-            <h4>Fall 2014</h4>
-            <ul>
-                <li> Programming Abstractions in C++ <span class="course">CS 106B</span></li>
-                <li> Vector Calculus for Engineers <span class="course">CME 100</span></li>
-            </ul>
-
-            <h4>Previous</h4>
-                <ul>
-                    <li> Engineering Design &amp Development </li>
-                    <li> Digital Electronics </li>
-                    <li> Computer Integrated Manufacturing </li>
-                </ul>
-        </div>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>        
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!--Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-58066648-1', 'auto');
-          ga('send', 'pageview');
-
-        </script>  
-
-    </body>
 </html>
