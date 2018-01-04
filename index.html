@@ -1,10 +1,12 @@
 <!DOCTYPE html> 
 <html>
 <head> 
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
   <title>vincent chen</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans" rel="stylesheet">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet" />
+  <link href="main.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -22,114 +24,77 @@
 
 <body> 
   <div class="container">
-    <div class="content">
-        <h1> vincent chen
-          <a href="mailto:vincentsc@cs.stanford.edu">email</a>
-          <a href="http://twitter.com/vinceschen">twitter</a> 
-          <a href="https://github.com/vincentschen">github</a> 
-          <a href="https://www.linkedin.com/in/vincent4chen">linkedin</a>
-          <a href="http://flickr.com/photos/vincentschen">flickr</a>
-        </h1> 
+    <h1> vincent chen
+      <a href="http://twitter.com/vinceschen">twitter</a> 
+      <a href="https://github.com/vincentschen">github</a> 
+      <a href="https://www.linkedin.com/in/vincent4chen">linkedin</a>
+      <a href="http://vincentsc.com/blog">blog</a>
+    </h1> 
         
-        <p> Computer science student @Stanford with concentration in machine learning. Creative writing minor. 
-        
-        <h2>where I've learned</h2> 
-        <div class="item">
-          <ul>
-            <li> 
-              Research Assistant <span><a class="link" href="http://dawn.cs.stanford.edu">Stanford InfoLab</a> <a href="https://cs.stanford.edu/people/chrismre/">(PI: Chris R&#233;)</a></span>
-              <p class="description"> Sep 2017 - Present. Working on <a href="http://dawn.cs.stanford.edu/2017/09/14/coral/">Coral</a> -- weak supervision for images. </p> 
-            </li>
+    <div>
+      <p>I'm a computer science student at Stanford with a concentration in machine learning and a minor in creative writing. I'm currently working in <a href="https://cs.stanford.edu/people/chrismre/">Chris Ré</a>'s group, using <a href="http://dawn.cs.stanford.edu/2017/07/16/weak-supervision/">weak supervision</a> to make deep learning more accessible in domains like medical imaging and computer vision.</p>
+      
+      <p>Most recently, I worked as an engineer at <a href="https://siftscience.com/">Sift Science</a> (fighting fraud with machine learning). In the past, I've also taken on product roles, designing VR experiences at <a href="https://www.xbox.com/">Xbox</a> and building point-of-care healthcare tools at <a href="https://emguidance.com/">EMGuidance</a>.</p>
             
-            <li> 
-              Software Engineering Intern <span><a class="link" href="https://siftscience.com">Sift Science</a></span>
-              <p class="description"> Summer 2017. Building distributed automation system and customer console. </p> 
-            </li>
-            
-            <li>
-              Co-Director <span><a class="link" href="https://www.treehacks.com/">TreeHacks</a></span></h3>
-              <p class="description"> 2016. Running an 800+ person event for the world's hackers and makers.</p> 
-            </li>
-            
-            <li>
-              Product Intern <span><a class="link" href="http://www.xbox.com/en-US/project-scorpio">Xbox, Microsoft</a></span>
-              <p class="description"> Summer 2016. Building console VR experiences. </p> 
-            </li>
-            
-            <li>
-              Product/Engineering Intern <span><a class="link" href="https://emguidance.com">EMGuidance</a></span>
-              <p class="description"> Spring 2016. Supporting systems for point-of-care clinicians.</p> 
-            </li>
-            
-            <li>
-              Software Engineering Intern <span><a class="link" href="https://www.web.lark.com">Lark</a></span>
-              <p class="description"> Summer 2015. Creating on-boarding experiences for pharma partners.</p> 
-            </li>
-          </ul>
-        </div>
-        
-        <h2>what I've built</h2> 
+      <p>My first time coding was at a hackathon. Some time passed... and in <a href="https://www.stanforddaily.com/treehacks-2016/">2016</a>, I had some of my most fun co-directing <a href="https://www.treehacks.com/">TreeHacks</a>, Stanford's largest, inter-collegiate hackathon.
 
-        <div class="item">
-          <h3>Predicting Wealth in NYC from FourSquare Check-ins<span><a href="http://cs229.stanford.edu/">CS229</a></span> 
-            <a class="fa fa-paper-plane" href="cs229.pdf"></a>
-          </h3>
-          <p class="description"> Python, NumPy. </p> 
-          <p> Created dataset mapping FourSquare check-in data to demographics for U.S. census tracts in NYC for the prediction of income quartiles.
-          </br>Collaboration: Dan Yu</p>
-        </div>
+      <p>I like writing to explain things clearly. One of these efforts is <a href="https://blog.ycombinator.com/category/paths/">Paths</a>, a series I created on YC's blog to make technical fields more accesible.</p>
         
-        <div class="item">
-          <h3>Class-conditional Superresolution with GANs <span><a href="http://cs231n.github.io">CS231N</a></span> 
-            <a class="fa fa-paper-plane" href="http://cs231n.stanford.edu/reports/2017/pdfs/314.pdf"></a>
-          </h3>
-          <p class="description"> Tensorflow. </p> 
-          <p>For the superresolution task, we propose several methods to introduce auxiliary, conditional information into generative adversarial networks (GANs) that produce images more tuned to the human eye.
-          </br>Collaboration: Liezl Puzon, Christina Wadsworth. Advisor: Ben Poole.</p>
-        </div>
-        
-        <div class="item">
-          <h3>Sequence-to-Sequence Text Summarization <span><a href="http://cs224n.stanford.edu">CS224N</a></span> 
-            <a class="fa fa-paper-plane" href="cs224n.pdf"></a>
-          </h3>
-          <p class="description"> Tensorflow. </p> 
-          <p>A look into several approaches to improve sequence-to-sequence with attention models on CNN/DailyMail dataset. We design input strategies for ingesting manually-written highlights as a more promising approaches compared to traditional headline-based summarization tasks.
-          </br>Collaboration: Liezl Puzon, Eduardo Torres Montaño. Advisor: Danqi Chen.</p>
-        </div>
-        
-        <div class="item">
-          <h3>AI Agent for Snake feat. Mice <span>CS221</span> 
-            <a class="fa fa-paper-plane" href="cs221.pdf"></a>
-          </h3>
-          <p class="description"> Game-playing agents, Python. </p> 
-          <p>Game-playing agent for Snake with moving food items, or mice. 
-          </br>Collaboration: John Kamalu, Scott Kazmierowicz.</p>
-        </div>
-        
-        <div class="item">
-          <h3>Curriculum Network <span>Research <a class="link" href="http://hci.stanford.edu/">(Stanford HCI)</a></span> 
-            <a class="fa fa-github" href="https://github.com/vincentschen/curriculum-network"></a>
-          </h3>
-          <p class="description"> d3.js, Node.js. </p> 
-          <p>Visualization of on-demand, personalized education graph in conjunction with Stanford’s Human Computer Interaction Lab.
-          </br> Collaboration: Geza Kovacs. Advisor: Michael Bernstein.</p>
-        </div>
-        
-        <h2>what I've written</h2> 
-        <div class="item">
-          <ul>
-            <li>
-              How to Get Into VR <span>Y Combinator Blog</span>
-              <a class="fa fa-paper-plane" href="https://blog.ycombinator.com/how-to-get-into-vr/"></a>
-              <p class="description">“The field is a molten landscape.” – Morgan Sinko (NullSpace VR)</p> 
-            </li> 
-            <li> 
-              How to Get Into NLP <span>Y Combinator Blog</span>
-              <a class="fa fa-paper-plane" href="https://blog.ycombinator.com/how-to-get-into-natural-language-processing/"></a>
-              <p class="description">"Working on NLP problems has never been more accessible."</p> 
-            </li>
-          </ul> 
-        </div>
-      </div> 
+      <p>In other parts of my life, I'm a born-again <a href="https://www.goodreads.com/user/show/45853018-vincent-chen">reader</a> and amateur <a href="https://www.flickr.com/photos/vincentschen/">photographer</a>.</p>     
+      
+      <p>Here's my email: <b>vincentsc [at] cs [dot] stanford [dot] edu</b>. Feel free to reach out!</p>
+    </div>
+    
+    <h2>projects and papers</h2> 
+    <div class="projects">
+      <section>
+        <h3>Automated Training Set Generation for Aortic Valve Classification</h3>
+        <p><b>Vincent Chen</b>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré. <a href="https://ml4health.github.io/2017/pages/posters.html">Machine Learning for Health (ML4H) Workshop, Neural Information Processing Systems (NIPS), 2017.</a></p> 
+        <p>Using weak-supervision, we learn a generative model over aortic valve MRIs to produce probabilistic training labels.
+        <p>[<a href="pdf/bav_poster.pdf">poster</a>]</p>
+      </section>
+      
+      <section>
+        <h3>Generating Training Labels for Cardiac Phase-Contrast MRI Images</h3>
+        <p><b>Vincent Chen</b>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré.
+          <a href="https://sites.google.com/view/med-nips-2017/abstracts"> Medical Imaging (MED-NIPS) Workshop, Neural Information Processing Systems (NIPS), 2017.</a></p> 
+      </section>
+      
+      <section>
+        <h3>Predicting Wealth in NYC from FourSquare Check-ins</h3>
+        <p><b>Vincent Chen</b>*, Dan Yu*. <a href="http://cs229.stanford.edu/">CS229.</a></p> 
+        <p>We developed a new method to predict demographics based on FourSquare data by engineering features based on check-ins mapped to U.S. census tracts.
+        <p>[<a href="pdf/foursquare.pdf">pdf</a>] [<a href="https://github.com/vincentschen/predicting-nyc-demographics">code</a>]</p>
+      </section>
+      
+      <section>
+        <h3>Class-conditional Superresolution with GANs</h3>
+        <p><b>Vincent Chen</b>*, Liezl Puzon*, Christina Wadsworth*. <a href="http://cs231n.github.io">CS231N.</a></p> 
+        <p>For the superresolution task, we proposed several methods to introduce auxiliary, conditional information into generative adversarial networks (GANs) that produce images more tuned to the human eye.</p>
+        <p>[<a href="http://cs231n.stanford.edu/reports/2017/pdfs/314.pdf">pdf</a>] [<a href="https://github.com/vincentschen/cgan-superres">code</a>]</p>
+      </section>
+    
+      <section>
+        <h3>Sequence-to-Sequence Text Summarization</h3>
+        <p><b>Vincent Chen</b>*, Liezl Puzon*, Eduardo Torres Montaño*. Advisor: Danqi Chen. <a href="http://web.stanford.edu/class/cs224n/">CS224N.</a></p> 
+        <p>We implemented several approaches for sequence-to-sequence summarization on the CNN/DailyMail dataset using attention mechanisms and pointer networks.</p>
+        <p>[<a href="pdf/summarization.pdf">pdf</a>]</p>
+      </section>
+      
+      <section>
+        <h3>AI Agent for Snake feat. Mice</h3>
+        <p><b>Vincent Chen</b>*, John Kamalu*, Scott Kazmierowicz*.<a href="http://web.stanford.edu/class/cs221/">CS221.</a></p> 
+        <p>We introduced an adversarial twist to the classic game, Snake, by allowing the food to move (hence, mice) and implemented an agent to play the new game.</p>
+        <p>[<a href="pdf/snake.pdf">pdf</a>] [<a href="https://github.com/vincentschen/snake-mice-ai">code</a>]</p>
+      </section>
+      
+      <section>
+        <h3>Curriculum Network for On-demand Education </h3>
+        <p><b>Vincent Chen</b>, Geza Kovacs. Advisor: Michael Bernstein. <a href="http://hci.stanford.edu/">Research, Stanford HCI.</a></p> 
+        <p>We created visualizations of academic curricula, where nodes in each curriculum network graph were modules for on-demand learning.</p>
+        <p>[<a href="https://github.com/vincentschen/curriculum-network">code</a>]</p>
+      </section>
+    
+  </div> 
 </body>
 </html>
