@@ -17,6 +17,7 @@ img {
 
 .header {
   text-align: center;
+  margin-right: 30px; // center '/blog'
   
   .fab {
     font-size: 14px;
@@ -26,7 +27,7 @@ img {
     color: inherit;
     text-decoration: none;
     font-size: 16px;     
-    margin: 40px;
+    margin: 30px;
     
     &:hover {
       text-decoration: underline;    
@@ -45,7 +46,7 @@ img {
 
 .container {
   padding: 25px;
-  width: 650px;
+  width: 700px;
   margin: 0 auto; 
 }
 
