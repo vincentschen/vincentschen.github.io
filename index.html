@@ -23,9 +23,8 @@
 
 </script>
 
-<body>
-
-  <div class="container">
+<body class="container">
+  <!-- <div class="container"> -->
     <div class='header'>
       <a href="http://twitter.com/vincentsunnchen"><i class='fab fa-twitter'></i> vincentsunnchen</a>
       <a href="http://vincentsc.com/blog">/blog</a>
@@ -38,20 +37,32 @@
     <div class='email'> vincentsc [at] cs [dot] stanford [dot] edu</div>
 
     <div>
-      <p>I'm a MS/BS student at Stanford with a concentration in machine learning and a minor in creative writing. I'm currently working in <a href="https://cs.stanford.edu/people/chrismre/">Chris Ré</a>'s group, using <a href="http://dawn.cs.stanford.edu/2017/07/16/weak-supervision/">weak supervision</a> to make deep learning more accessible in domains like medical imaging and computer vision.</p>
+      <p>I'm a MS/BS student at Stanford with a concentration in machine learning and a minor in creative writing.
+        I'm interested in <a href="http://dawn.cs.stanford.edu/2017/07/16/weak-supervision/">shaping datasets</a> to make machine deep learning more accesible in domains like computer vision and medical imaging.
+      </p>
 
-      <p>Most recently, I worked as an engineer at <a href="https://siftscience.com/">Sift Science</a> fighting fraud with machine learning. In the past, I've also taken on product roles, designing VR experiences at <a href="https://www.xbox.com/">Xbox</a> and building point-of-care healthcare tools at <a href="https://emguidance.com/">EMGuidance</a>. In <a href="https://www.stanforddaily.com/treehacks-2016/">2016</a>, I had a lot of fun co-directing <a href="https://www.treehacks.com/">TreeHacks</a>, Stanford's largest intercollegiate hackathon.</a>
+      <p>I'm currently a research assistant in the Stanford AI Lab with <a href="https://cs.stanford.edu/people/chrismre/">Chris Ré</a>'s group.
+        Most recently, I've been training neural networks on the <a href="https://www.tesla.com/autopilot">Autopilot vision team at Tesla</a>.
+        In the past, I worked at <a href="https://siftscience.com/">Sift Science</a> to fight fraud with machine learning, <a href="https://www.xbox.com/">Xbox</a> to build VR experiences, and <a href="https://emguidance.com/">EMGuidance</a> to build point-of-care healthcare tools.
+        At Stanford, I had a lot of fun <a href="https://www.stanforddaily.com/treehacks-2016/">co-directing</a> <a href="https://www.treehacks.com/">TreeHacks</a>, Stanford's largest intercollegiate hackathon.</a>
+      </p>
 
-      <p>I like writing to explain things clearly. One of these efforts is <a href="https://blog.ycombinator.com/category/paths/">Paths</a>, a series I created on YC's blog to make technical fields more accesible.</p>
-
-      <p>In other parts of my life, I'm a born-again <a href="https://www.goodreads.com/user/show/45853018-vincent-chen">reader</a> and amateur <a href="https://www.flickr.com/photos/vincentschen/">photographer</a>.</p>
+      <p>I also love <a href="https://www.goodreads.com/user/show/45853018-vincent-chen">reading</a>, <a href="https://blog.ycombinator.com/category/paths/">writing</a>, and <a href="https://www.flickr.com/photos/vincentschen/">photography</a>!</p>
+    </div>
+    <h2>teaching</h2>
+    <div class="projects">
+      <section>
+        <h3>CS231N: Convolutional Neural Networks for Visual Recognition</h3>
+        <p><b>Teaching Assistant</b>, <a href="http://cs231n.stanford.edu/">Spring 2018</a></p>
+        <p>Hosted office hours, advised student projects, and led discussion sections on <a href="http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf">backpropogation</a> and <a href="http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds07.pdf">weak supervision</a>.</p>
+      </section>
     </div>
 
     <h2>projects and papers</h2>
     <div class="projects">
       <section>
         <h3>Automated Training Set Generation for Aortic Valve Classification</h3>
-        <p><b>Vincent Chen</b>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré. <a href="https://ml4health.github.io/2017/pages/posters.html">Machine Learning for Health (ML4H) Workshop, Neural Information Processing Systems (NIPS), 2017.</a></p>
+        <p><b>Vincent Chen</b>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré. <a href="https://ml4health.github.io/2017/pages/posters.html">Machine Learning for Health (ML4H) Workshop, NIPS, 2017.</a></p>
         <p>Using weak-supervision, we learn probabilistic training labels for aortic valve MRIs.
         <p>[<a href="pdf/nips17_ml4h.pdf">pdf</a>] [<a href="pdf/bav_poster.pdf">poster</a>]</p>
       </section>
@@ -59,45 +70,31 @@
       <section>
         <h3>Generating Training Labels for Cardiac Phase-Contrast MRI Images</h3>
         <p><b>Vincent Chen</b>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré.
-          <a href="https://sites.google.com/view/med-nips-2017/abstracts"> Medical Imaging (MED-NIPS) Workshop, Neural Information Processing Systems (NIPS), 2017.</a></p>
+          <a href="https://sites.google.com/view/med-nips-2017/abstracts"> Medical Imaging (MED-NIPS) Workshop, NIPS, 2017.</a></p>
           [<a href="pdf/nips17_med-nips.pdf">pdf</a>]
       </section>
 
       <section>
         <h3>Predicting Wealth in NYC from FourSquare Check-ins</h3>
         <p><b>Vincent Chen</b>*, Dan Yu*. <a href="http://cs229.stanford.edu/">CS229.</a></p>
-        <p>We developed a new method to predict demographics based on FourSquare data by engineering features based on check-ins mapped to U.S. census tracts.
+        <p>We develop a new method to predict demographics based on FourSquare data by engineering features based on check-ins mapped to U.S. census tracts.
         <p>[<a href="http://vincentsc.com/blog/2018/01/05/predicting-wealth-in-nyc.html">blog</a>] [<a href="pdf/foursquare.pdf">pdf</a>] [<a href="https://github.com/vincentschen/predicting-nyc-demographics">code</a>]</p>
       </section>
 
       <section>
         <h3>Class-conditional Superresolution with GANs</h3>
         <p><b>Vincent Chen</b>*, Liezl Puzon*, Christina Wadsworth*. <a href="http://cs231n.github.io">CS231N.</a></p>
-        <p>For the superresolution task, we proposed several methods to introduce auxiliary, conditional information into generative adversarial networks (GANs) that produce images more tuned to the human eye.</p>
+        <p>We propose several methods to introduce auxiliary, conditional information into generative adversarial networks (GANs) that produce super-resolution results that better tuned to the human eye.</p>
         <p>[<a href="http://cs231n.stanford.edu/reports/2017/pdfs/314.pdf">pdf</a>] [<a href="http://cs231n.stanford.edu/reports/2017/posters/314.pdf">poster</a>] [<a href="https://github.com/vincentschen/cgan-superres">code</a>]</p>
       </section>
 
       <section>
         <h3>Sequence-to-Sequence Text Summarization</h3>
         <p><b>Vincent Chen</b>*, Liezl Puzon*, Eduardo Torres Montaño*. Advisor: Danqi Chen. <a href="http://web.stanford.edu/class/cs224n/">CS224N.</a></p>
-        <p>We implemented several approaches for sequence-to-sequence summarization on the CNN/DailyMail dataset using attention mechanisms and pointer networks.</p>
+        <p>We implement several approaches for sequence-to-sequence summarization on the CNN/DailyMail dataset using attention mechanisms and pointer networks.</p>
         <p>[<a href="pdf/summarization.pdf">pdf</a>]</p>
       </section>
 
-      <section>
-        <h3>AI Agent for Snake feat. Mice</h3>
-        <p><b>Vincent Chen</b>*, John Kamalu*, Scott Kazmierowicz*.<a href="http://web.stanford.edu/class/cs221/">CS221.</a></p>
-        <p>We introduced an adversarial twist to the classic game, Snake, by allowing the food to move (hence, mice) and implemented an agent to play the new game.</p>
-        <p>[<a href="pdf/snake.pdf">pdf</a>] [<a href="https://github.com/vincentschen/snake-mice-ai">code</a>]</p>
-      </section>
-
-      <section>
-        <h3>Curriculum Network for On-demand Education </h3>
-        <p><b>Vincent Chen</b>, Geza Kovacs. Advisor: Michael Bernstein. <a href="http://hci.stanford.edu/">Research, Stanford HCI.</a></p>
-        <p>We created visualizations of academic curricula, where nodes in each curriculum network graph were modules for on-demand learning.</p>
-        <p>[<a href="https://github.com/vincentschen/curriculum-network">code</a>]</p>
-      </section>
-
-  </div>
+  <!-- </div> -->
 </body>
 </html>
