@@ -4,22 +4,24 @@ $gray: #4B4B4B;
 body {
   background: url('background.png');
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 img {
   border-radius: 50%;
-  width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100px;
 }
 
 .header {
   text-align: center;
   margin-right: 30px; // center '/blog'
+  border-bottom: 2px solid $primary-blue;
+  margin-bottom: 20px;
 
-  .fab {
+  .fab { // font-awesome
     font-size: 14px;
   }
 
@@ -34,20 +36,17 @@ img {
       opacity: 0.6;
     }
   }
-
-  border-bottom: 2px solid $primary-blue;
-  margin-bottom: 20px;
 }
 
 .email {
-  text-align: center;
   font-size: 18px;
+  text-align: center;
 }
 
 .container {
   padding: 25px;
-  width: 650px;
   margin: 0 auto;
+  width: 650px;
 }
 
 h1 {
@@ -68,17 +67,19 @@ h2 {
 
 h3 {
   color: $gray;
-  padding: 0;
   margin: 0;
+  font-weight: none;
+  padding: 0;
 }
 
 a {
   color: $primary-blue;
   font-size: inherit;
-  text-decoration: underline;
+  text-decoration: none;
+
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
@@ -87,12 +88,19 @@ p {
 }
 
 .projects {
-  padding: 0 20px;
   border-left: 2px solid $primary-blue;
+  padding: 0 20px;
 
   p {
-    padding: 0;
+    color: $gray;
+    font-weight: 100;
     margin: 5px 0;
+    padding: 0;
+    
+    .me { 
+      font-weight: bold;
+      text-decoration: underline; 
+    }
   }
 
   section {
