@@ -48,6 +48,10 @@ img {
   width: 650px;
 }
 
+.blurb {
+  font-weight: lighter;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -62,13 +66,6 @@ h2 {
   font-weight: 300;
   font-size: 30px;
   text-align: center;
-}
-
-h3 {
-  color: $gray;
-  margin: 0;
-  font-weight: 400;
-  padding: 0;
 }
 
 a {
@@ -90,17 +87,41 @@ p {
   border-left: 2px solid $primary-blue;
   padding: 0 20px;
 
+  h3 {
+    color: $gray;
+    margin: 0;
+    font-weight: 300;
+    padding: 0;
+  }
+
   p {
     color: $gray;
-    // font-size: 14px;
     font-weight: 200;
     margin: 5px 0;
     padding: 0;
-    
+
     .me { 
       font-weight: 400;
       text-decoration: underline; 
     }
+  }
+
+  .authors {
+    // font-style: italic;
+  }
+
+  .description {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .links {
+    font-weight: bolder;
+  }
+
+  .venue {
+    font-weight: bolder;
+    font-style: italic;
   }
 
   section {

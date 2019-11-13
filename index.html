@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-  <link href="main.min.css" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -26,7 +26,7 @@
 </script>
 
 <body class="container">
-  <!-- <div class="container"> -->
+  <div class="container">
     <div class='header'>
       <a href="http://twitter.com/vincentsunnchen"><i class='fab fa-twitter'></i> vincentsunnchen</a>
       <a href="http://vincentsc.com/blog">/blog</a>
@@ -38,7 +38,7 @@
     <h1>vincent sunn chen</h1>
     <div class='email'> vincentsc [at] cs [dot] stanford [dot] edu</div>
 
-    <div>
+    <div class="blurb">
       <p>I'm a graduate student at Stanford with a concentration in machine learning and a minor in creative writing.
         I'm interested in <a href="https://dawn.cs.stanford.edu/2019/06/15/superglue/">shaping datasets</a> to make deep learning more accesible to domain experts in fields like medical imaging</a>.
       </p>
@@ -58,45 +58,79 @@
 
       <section>
         <h3>Slice-based Learning: A Programming Model for Residual Learning in Critical Data Slices</h3>
-        <p><span class="me">Vincent S Chen</span>, Zhenzhen Weng, Alexander Ratner, Christopher Ré</p>
-        <p><a href="https://arxiv.org/abs/1909.06349">NeurIPS 2019.</a></p>
+        <p class="authors"><span class="me">Vincent S Chen</span>, Zhenzhen Weng, Alexander Ratner, Christopher Ré</p>
+        <p class="description">
+          ML models can achieve high quality performance on coarse-grained metrics (e.g., F1-score, overall accuracy), but they may underperform on critical data subsets, or <i>slices</i>.
+          We introduce <i>Slice-based Learning</i>, a new programming model in which practitioners use <i>slicing functions</i> to specify critical data subsets for which the model should pay attention.
+        </p>
+        <p class="links">
+          <span class="venue">In NeurIPS 2019. </span>
+          <a href="https://arxiv.org/abs/1909.06349">[paper]</a>
+          <a href="https://github.com/snorkel-team/snorkel-tutorials/blob/master/spam/03_spam_data_slicing_tutorial.ipynb">[code]</a>
+        </p>
       </section>
 
-      <section>
+      <section id="scenegraph">
         <h3>Scene Graph Prediction with Limited Labels</h3>
-        <p><span class="me">Vincent S Chen</span>, Paroma Varma, Ranjay Krishna, Michael Bernstein, Christopher Ré, Li Fei-Fei</p>
-        <p><a href="https://arxiv.org/abs/1904.11622">ICCV 2019.</a></p>
-      </section>
-
-      <section>
-        <h3>Powerful Abstractions for Programming Your Training Data</h3>
-        <p>Sen Wu, <span class="me">Vincent S. Chen</span>, Braden Hancock, ALex Ratner, Chris Ré, and other members of Hazy Lab</p>
-        <p>
-          <a href="https://dawn.cs.stanford.edu/2019/06/15/superglue/">SuperGLUE <b>state-of-the-art</b>, 06/15/2019 </a>
+        <p class="authors"><span class="me">Vincent S Chen</span>, Paroma Varma, Ranjay Krishna, Michael Bernstein, Christopher Ré, Li Fei-Fei</p>
+        <p class="description">
+          Scene graphs have emerged as useful in a number of computer vision tasks, including visual question answering — however, most scene graph datasets are sparse due to annotator error.
+          This work attempts to overcome limitations of human annotators using a semi-supervised method, taking advantage of both limited labels and unlabeled data, to generate training datasets for scene graphs.
+        </p>
+        <p class="links">
+          <span class="venue">In ICCV 2019. </span>
+          <a href="https://arxiv.org/abs/1904.11622">[paper]</a>
+          <a href="https://github.com/vincentschen/limited-label-scene-graphs">[code]</a>
+          <a href="papers/iccv19_poster.pdf">[poster]</a>
         </p>
       </section>
 
       <section>
-        <h3>Massive Multi-Task Learning with Snorkel: Bringing More Supervision to Bear</h3>
-        <p>Braden Hancock, Clara McCreery, Ines Chami, <span class="me">Vincent S. Chen</span>, Sen Wu, Jared Dunnmon, Paroma Varma, Max Lam, and Chris Ré</p>
-        <p>
-          <a href="https://dawn.cs.stanford.edu/2019/03/22/glue/">GLUE <b>state-of-the-art</b>, 03/22/2019</a>
+        <h3>Powerful Abstractions for Programming Your Training Data</h3>
+        <p class="authors">Sen Wu, <span class="me">Vincent S. Chen</span>, Braden Hancock, ALex Ratner, Chris Ré, and other members of Hazy Lab</p>
+        <p class="description">
+          We leverage key abstractions in <a href="https://snorkel.org">Snorkel</a> to achieve state-of-the-art scores on the SuperGLUE benchmark: (1) weak supervision (2) data augmentation (3) data slicing.
+        </p>
+        <p class="links">
+          <span class="venue">SuperGLUE Benchmark. </span>
+          <a href="http://ai.stanford.edu/blog/training-data-abstractions/">[blog]</a>
+          <a href="https://github.com/HazyResearch/snorkel-superglue">[code]</a>
+        </p>
+      </section>
+
+      <section>
+        <h3>Massive Multi-Task Learning: Bringing More Supervision to Bear</h3>
+        <p class="authors">Braden Hancock, Clara McCreery, Ines Chami, <span class="me">Vincent S. Chen</span>, Sen Wu, Jared Dunnmon, Paroma Varma, Max Lam, and Chris Ré</p>
+        <p class="description">
+          We incorporate a number of supervision sources, from traditional supervision, transfer learning, multi-task learning, weak supervision, and ensembling, to achieve state-of-the-art scores on the GLUE benchmark.
+        </p>
+        <p class="links">
+          <span class="venue">GLUE Benchmark. </span>
+          <a href="https://dawn.cs.stanford.edu/2019/03/22/glue/">[blog]</a>
         </p>
       </section>
 
       <section>
         <h3>Weakly supervised classification of rare aortic valve malformations using unlabeled cardiac MRI sequences</h3>
-        <p>Jason A Fries, Paroma Varma, <span class="me">Vincent S Chen</span>, Ke Xiao, Heliodoro Tejeda, Priyanka Saha, Jared Dunnmon, Henry Chubb, Shiraz Maskatia, Madalina Fiterau, Scott Delp, Euan Ashley, Christopher Ré, James Priest</p>
-        <p><a href="https://www.nature.com/articles/s41467-019-11012-3">Nature Communications.</a></p>
+        <p class="authors">Jason A Fries, Paroma Varma, <span class="me">Vincent S Chen</span>, Ke Xiao, Heliodoro Tejeda, Priyanka Saha, Jared Dunnmon, Henry Chubb, Shiraz Maskatia, Madalina Fiterau, Scott Delp, Euan Ashley, Christopher Ré, James Priest</p>
+        <p class="description">
+          Bicuspid aortic valve (BAV) is the most common congenital malformation of the heart — obtaining training data is a tremendous practical roadblock to building ML models for detecting this malformation.
+          We collaborate with cardiologists from Stanford Medicine to write labeling functions over geometric features of heart MRIs to produce probabilistic training labels.
+        </p>
+        <p class="links">
+          <span class="venue">In Nature Communications. </span>
+          <a href="https://www.nature.com/articles/s41467-019-11012-3">[paper]</a>
+        </p>
       </section>
 
       <section>
         <h3>Automated Training Set Generation for Aortic Valve Classification</h3>
-        <p><span class="me">Vincent Chen</span>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré.</p>
-        <p>
-           <a href="papers/bav_poster.pdf">NeurIPS 2017, ML4H Workshop.</a>
+        <p class="authors"><span class="me">Vincent Chen</span>, Paroma Varma, Madalina Fiterau, James Priest and Christopher Ré.</p>
+        <p class="description">Using weak-supervision, we learn probabilistic training labels for aortic valve MRIs.</p>
+        <p class="links">
+          <span class="venue">In NeurIPS 2017, ML4H Workshop. </span>
+          <a href="papers/bav_poster.pdf">[poster]</a>
         </p>
-        <p>Using weak-supervision, we learn probabilistic training labels for aortic valve MRIs.</p>
       </section>
 
     </div>
@@ -106,7 +140,7 @@
       <section>
         <h3>CS231N: Convolutional Neural Networks for Visual Recognition</h3>
         <p>Teaching Assistant, <a href="http://cs231n.stanford.edu/">Spring 2018</a></p>
-        <p>Hosted office hours, advised student projects, and led discussion sections on <a href="http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf">backpropogation</a> and <a href="http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds07.pdf">weak supervision</a>.</p>
+        <p class="description">Hosted office hours, advised student projects, and led discussion sections on <a href="http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf">backpropogation</a> and <a href="http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds07.pdf">weak supervision</a>.</p>
       </section>
     </div>
 
