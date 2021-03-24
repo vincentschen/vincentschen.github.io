@@ -43,9 +43,9 @@ img {
 }
 
 .container {
-  padding: 25px;
+  padding: 10px 0;
   margin: 0 auto;
-  width: 650px;
+  width: 725px;
 }
 
 .blurb {
@@ -79,18 +79,15 @@ a {
   }
 }
 
-p {
-  font-size: 16px;
-}
-
 .projects {
   border-left: 2px solid $primary-blue;
   padding: 0 20px;
 
   h3 {
     color: $gray;
+    font-size: 16px;
     margin: 0;
-    font-weight: 300;
+    font-weight: bolder;
     padding: 0;
   }
 
@@ -116,7 +113,7 @@ p {
   }
 
   .links {
-    font-weight: bolder;
+    // font-weight: bolder;
   }
 
   .venue {
